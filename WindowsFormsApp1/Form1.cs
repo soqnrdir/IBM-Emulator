@@ -71,26 +71,26 @@ namespace WindowsFormsApp1
             if (chkFire1.Checked)
                 val |= 0x02;
             if (chkFire2.Checked)
-                val |= 0x03;
-            if (chkFire3.Checked)
                 val |= 0x04;
-            if (chkFire4.Checked)
-                val |= 0x05;
-            if (chkFire5.Checked)
-                val |= 0x06;
-            if (chkFire6.Checked)
-                val |= 0x07;
-            if (chkFire7.Checked)
+            if (chkFire3.Checked)
                 val |= 0x08;
+            if (chkFire4.Checked)
+                val |= 0x10;
+            if (chkFire5.Checked)
+                val |= 0x20;
+            if (chkFire6.Checked)
+                val |= 0x40;
+            if (chkFire7.Checked)
+                val |= 0x80;
             return val;
         }
         private byte getFireByte1()
         {
             byte val = 0;
             if (chkFire8.Checked)
-                val |= 0x09;
+                val |= 0x02;
             if (chkFire9.Checked)
-                val |= 0x0A;
+                val |= 0x04;
             return val;
         }
 
@@ -102,26 +102,26 @@ namespace WindowsFormsApp1
             if (chkPA1.Checked)
                 val |= 0x02;
             if (chkPA2.Checked)
-                val |= 0x03;
-            if (chkPA3.Checked)
                 val |= 0x04;
-            if (chkPA4.Checked)
-                val |= 0x05;
-            if (chkPA5.Checked)
-                val |= 0x06;
-            if (chkPA6.Checked)
-                val |= 0x07;
-            if (chkPA7.Checked)
+            if (chkPA3.Checked)
                 val |= 0x08;
+            if (chkPA4.Checked)
+                val |= 0x10;
+            if (chkPA5.Checked)
+                val |= 0x20;
+            if (chkPA6.Checked)
+                val |= 0x40;
+            if (chkPA7.Checked)
+                val |= 0x80;
             return val;
         }
         private byte getPAByte1()
         {
             byte val = 0;
             if (chkPA8.Checked)
-                val |= 0x09;
+                val |= 0x02;
             if (chkPA9.Checked)
-                val |= 0x0A;
+                val |= 0x04;
             return val;
         }
 
